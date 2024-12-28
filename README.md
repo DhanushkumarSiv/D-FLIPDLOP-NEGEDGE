@@ -1,5 +1,7 @@
 # D-FLIPDLOP-NEGEDGE
 
+**DATE :**  29/11/2024
+
 **AIM:**
 
 To implement  D flipflop using verilog and validating their functionality using their functional tables
@@ -9,6 +11,8 @@ To implement  D flipflop using verilog and validating their functionality using 
 Quartus prime
 
 **THEORY**
+
+D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
 
 **D Flip-Flop**
 
@@ -28,17 +32,49 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Type the program in Quartus software.
+
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+
+5.For different input combinations generate the timing diagram.
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+Program for flipflops and verify its truth table in quartus using Verilog programming.
 
-**RTL LOGIC FOR FLIPFLOPS**
+Developed by: DHANUSHKUMAR SIVAKUMAR
+
+RegisterNumber: 24901013
+
+```
+module ex8(D,clk,Q,Qbar);
+input D,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar =1;
+always @ (posedge clk)
+begin
+Q=D;
+Qbar = ~D;
+end
+endmodule
+```
+
+**RTL DIAGRAM**
+
+![image](https://github.com/user-attachments/assets/ef56c2ab-c10e-4c33-bbf9-e3c8ca6979cf)
 
 
-**TIMING DIGRAMS FOR FLIP FLOPS**
+**TIMING WAVEFORM**
 
+![image](https://github.com/user-attachments/assets/437ed5c8-a2f5-42aa-a036-3320559460e3)
 
-**RESULTS**
+**RESULT :**
+
+D flipflop using verilog and validating their functionality using their functional tables are verified.
+
