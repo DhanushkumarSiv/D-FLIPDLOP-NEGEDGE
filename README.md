@@ -65,12 +65,14 @@ endmodule
 
 **RTL DIAGRAM**
 
-![image](https://github.com/user-attachments/assets/ef56c2ab-c10e-4c33-bbf9-e3c8ca6979cf)
+![image](https://github.com/user-attachments/assets/532fb748-b562-43fe-84d9-d45412fe15c0)
+
 
 
 **TIMING WAVEFORM**
 
-![image](https://github.com/user-attachments/assets/437ed5c8-a2f5-42aa-a036-3320559460e3)
+![image](https://github.com/user-attachments/assets/d221b0b4-3119-4387-8630-1c42681f6f80)
+
 
 **RESULT :**
 
