@@ -49,18 +49,18 @@ Developed by: DHANUSHKUMAR SIVAKUMAR
 RegisterNumber: 24901013
 
 ```
-module ex8(D,clk,Q,Qbar);
-input D,clk;
-output reg Q;
-output reg Qbar;
-initial Q=0;
-initial Qbar =1;
-always @ (posedge clk)
-begin
-Q=D;
-Qbar = ~D;
-end
+module d_ff_neg_edge (d, clk, rst, q);
+  input d, clk, rst;
+  output reg q;
+
+  always @(negedge clk or posedge rst) begin
+    if (rst)
+      q <= 0;
+    else
+      q <= d;
+  end
 endmodule
+
 ```
 
 **RTL DIAGRAM**
